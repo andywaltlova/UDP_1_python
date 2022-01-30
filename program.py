@@ -1,10 +1,18 @@
-jmeno = "Andrea"
-prijmeni = "Waltlova"
+import statistics
+kocicky = ['mourek', 'pruhovana', 'cerna']
 
-vek = input("Zadej vek: ")
+# for kocicka in kocicky:
+#     print(kocicka.lower())
 
-vek = int(vek) + 10
 
-# print(jmeno + " " + prijmeni + "a je mi " + str(vek))
-print(f"{jmeno} {prijmeni} a je mi {vek} let.")
-print(jmeno, prijmeni, "a je mi", vek, "let.")
+znamky = [1, 2, 3, 3, 3, 0]
+soucet = 0
+for cislo in znamky:
+    # soucet += cislo
+    soucet = soucet + cislo
+
+prumer = statistics.mean(znamky)
+
+print(f"Prumer znamek je: {prumer}")
+print(soucet)
+print(sum(znamky))
